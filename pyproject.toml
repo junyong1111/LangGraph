@@ -1,0 +1,32 @@
+[project]
+name = "example1"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "junyong2"}
+]
+readme = "README.md"
+requires-python = ">=3.8"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "example1"
+version = "0.1.0"
+description = ""
+authors = ["junyong2"]
+readme = "README.md"
+packages = [
+    { include = "example1", from = "." }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+typing-extensions = "^4.12.2"
+langchain = "^0.3.14"
+langgraph = "^0.2.63"
+python-dotenv = "^1.0.1"
+langchain-openai = "^0.3.0"
+
