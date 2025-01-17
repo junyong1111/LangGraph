@@ -1,0 +1,9 @@
+// Chat Flow Graph
+digraph {
+	rankdir=LR
+	chatbot
+	tools
+	__start__
+	tools -> chatbot
+	__start__ -> chatbot
+}
